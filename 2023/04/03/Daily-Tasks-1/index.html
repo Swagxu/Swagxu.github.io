@@ -128,7 +128,7 @@
 <li>默写常用中学公式</li>
 <li>视频：武 01-05</li>
 <li>讲义：武基础篇 P1-39</li>
-<li>1800：P3-10</li>
+<li>1800：P3-8(基础练习-解答题2)</li>
 </ol>
 <h3 id="英语-1">英语</h3>
 <ol type="1">
@@ -167,6 +167,18 @@ class="math inline">\(f^{(n)}(x)\)</span> ——武基础P25例33</p></li>
 x=0\quad(\alpha&gt;0)\)</span>——武P35例4</p></li>
 <li><p><span class="math inline">\(1-\cos^\alpha
 x\sim\frac{\alpha}{2}x^2\)</span></p></li>
+<li><p>在相同规模 <span class="math inline">\(n\)</span> 下，复杂度
+<span class="math inline">\(O(n)\)</span> 的算法在时间上总是优于复杂度
+<span class="math inline">\(O(2^n)\)</span> 的算法</p>
+<p>数据结构讲义：对，本项考察算法效率的理解，时间复杂度是指渐近时间复杂度，不要想当然地去给
+<span class="math inline">\(n\)</span> 赋予一个特殊值，时间复杂度为
+<span class="math inline">\(O(n)\)</span> 的算法必然优于时间复杂度为
+<span class="math inline">\(O(2^n)\)</span> 的算法</p>
+<p>考试配套习题：错，该说法等价于 <span
+class="math inline">\(C_1*f(n)&lt;C_2*f(2^n)\)</span> ，当 <span
+class="math inline">\(C_1\)</span> 足够大而 <span
+class="math inline">\(C_2\)</span> 足够小且 <span
+class="math inline">\(n\)</span> 很小时，未必成立</p></li>
 </ul>
 <hr />
 <p>附：</p>
@@ -268,7 +280,41 @@ class="math inline">\(\log^M_a=\frac{\log^M_b}{\log^a_b}\)</span></p>
 <p><span class="math inline">\(a+b\geq2\sqrt{ab}\quad
 a&gt;0,b&gt;0,\)</span> 当 <span class="math inline">\(a=b\)</span>
 时等号成立</p>
-<p>$$</p>
+<p>$ab()^2$ 当 <span class="math inline">\(a=b\)</span> 时等号成立</p>
+<p><span class="math inline">\(||a|-|b||\leq|a\pm
+b|\leq|a|+|b|\)</span></p>
+<p>10.数列</p>
+<p>等差数列的前 <span class="math inline">\(n\)</span> 项和 <span
+class="math inline">\(S_n=\frac{n(a_1+a_n)}{2}=na_1+\frac{n(n-1)d}{2}\)</span></p>
+<p>等比数列的前 <span class="math inline">\(n\)</span> 项和</p>
+<p><span class="math display">\[
+S_n=
+\begin{cases}
+na_1,&amp;q=1\\
+\frac{a_1(1-q^n)}{1-q},&amp;q\neq1
+\end{cases}
+\]</span></p>
+<p>11.平面图形</p>
+<p>扇形：设 <span class="math inline">\(\theta\)</span>
+为扇形角的弧度数， <span class="math inline">\(r\)</span>
+为扇形半径，则弧长 <span class="math inline">\(l=\theta r\)</span>
+，扇形面积 <span class="math inline">\(S=\frac{1}{2}lr=\frac{1}{2}\theta
+r^2\)</span></p>
+<p>12.点到直线距离公式：点 <span
+class="math inline">\((x_0,y_0)\)</span> 到直线 <span
+class="math inline">\(Ax+By+C=0\)</span> 的距离 <span
+class="math inline">\(d=\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}\)</span></p>
+<p>13.标准方程</p>
+<p>椭圆的标准方程： <span
+class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span> 或
+<span
+class="math inline">\(\frac{x^2}{b^2}+\frac{y^2}{a^2}=1\)</span></p>
+<p>双曲线的标准方程： <span
+class="math inline">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\)</span> 或
+<span
+class="math inline">\(\frac{y^2}{a^2}-\frac{x^2}{b^2}=1\)</span></p>
+<p>抛物线的标准方程: <span class="math inline">\(y^2=\pm2px,\quad
+x^2=\pm2py\)</span></p>
 <p>教程MarkDown：<a
 target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">MarkDown</a></p>
 <p>使用Markdown语法编写数学公式（详细版）：<a
