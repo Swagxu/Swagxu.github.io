@@ -108,6 +108,96 @@
 <li>讲义：数据结构 P21-63</li>
 <li>考试配套习题 P5-6</li>
 </ol>
+<hr />
+<p>错题整理+重难点+小结：</p>
+<ul>
+<li><p>(1800,P4,选择题5)设 <span
+class="math inline">\(f(x)=\frac{|\ln|x||}{x^2-1}\)</span> ,则 <span
+class="math inline">\(f(x)\)</span> 有( <span
+class="math inline">\(\quad\)</span> )</p>
+<p><span class="math inline">\((A)\)</span>
+两个跳跃间断点，一个第二类间断点</p>
+<p><span class="math inline">\((B)\)</span>
+两个可去间断点，一个第二类间断点</p>
+<p><span class="math inline">\((C)\)</span>
+一个可去间断点，一个跳跃间断点，一个第二类间断点</p>
+<p><span class="math inline">\((D)\)</span> 三个第二类间断点</p>
+<p>答案：<span class="math inline">\(A\)</span></p>
+<p>解：显然函数 <span class="math inline">\(f(x)\)</span> 的间断点为
+<span class="math inline">\(x=-1,x=0,x=1,\)</span> 由</p>
+<p><span class="math display">\[
+  \lim\limits_{x\to-1^-}f(x)=\lim\limits_{x\to-1^-}\frac{\ln(-x)}{x^2-1}=\lim\limits_{x\to-1^-}\frac{1}{x-1}·\frac{\ln[1-(x+1)]}{x+1}=\frac{1}{2}\\
+  \lim\limits_{x\to-1^+}f(x)=\lim\limits_{x\to-1^+}\frac{-\ln(-x)}{x^2-1}=\lim\limits_{x\to-1^+}\frac{1}{x-1}·\frac{\ln[1-(x+1)]}{x+1}=-\frac{1}{2}
+  \]</span></p>
+<p>得 <span class="math inline">\(x=-1\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的跳跃间断点；</p>
+<p>由 <span class="math inline">\(\lim\limits_{x\to
+0}f(x)=-\infty\)</span> 得 <span class="math inline">\(x=0\)</span> 为
+<span class="math inline">\(f(x)\)</span> 的第二类间断点；</p>
+<p>由</p>
+<p><span class="math display">\[
+  \lim\limits_{x\to 1^-}f(x)=-\lim\limits_{x\to 1^-}\frac{\ln
+x}{x^2-1}=-\lim\limits_{x\to
+1^-}\frac{1}{x+1}·\frac{\ln[1+(x-1)]}{x-1}=-\frac{1}{2}\\
+  \lim\limits_{x\to 1^+}f(x)=\lim\limits_{x\to 1^+}\frac{\ln
+x}{x^2-1}=\lim\limits_{x\to
+1^+}\frac{1}{x+1}·\frac{\ln[1+(x-1)]}{x-1}=\frac{1}{2}\\
+  \]</span></p>
+<p>得 <span class="math inline">\(x=1\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的跳跃间断点，选 <span
+class="math inline">\((A)\)</span></p>
+<p> </p></li>
+<li><p>(1800,P5,解答题7)设 <span
+class="math inline">\(a_1=1,a_{n+1}=\sqrt{1+a_n}\)</span> ，证明： <span
+class="math inline">\(\lim\limits_{n\to\infty}a_n\)</span>
+存在，并求此极限</p>
+<p>证明：显然 <span class="math inline">\(a_1&lt;a_2\)</span> ，设 <span
+class="math inline">\(a_k&lt;a_{k+1}\)</span> ，由 <span
+class="math inline">\(\sqrt{1+a_k}&lt;\sqrt{1+a_{k+1}}\)</span> 得 <span
+class="math inline">\(a_{k+1}&lt;a_{k+2}\)</span> ,</p>
+<p>由数学归纳法可知，对任意的 <span class="math inline">\(n\)</span>
+，有 <span class="math inline">\(a_n&lt;a_{n+1}\)</span> ，即数列 <span
+class="math inline">\(\{a_n\}\)</span> 单调递增；</p>
+<p><span class="math inline">\(a_1=1&lt;2\)</span> ，设 <span
+class="math inline">\(a_k&lt;2\)</span> ，则 <span
+class="math inline">\(a_{k+1}=\sqrt{1+a_k}&lt;\sqrt{1+2}&lt;2\)</span>
+，</p>
+<p>由数学归纳法可知，对任意的 <span class="math inline">\(n\)</span>
+，有 <span class="math inline">\(a_n&lt;2\)</span> ，即 <span
+class="math inline">\(\{a_n\}\)</span> 单调递增且有上界，故 <span
+class="math inline">\(\lim\limits_{n\to\infty}a_n\)</span> 存在</p>
+<p>令 <span class="math inline">\(\lim\limits_{n\to\infty}a_n=A\)</span>
+，对 <span class="math inline">\(a_{n+1}=\sqrt{1+a_n}\)</span>
+两边同时取极限得 <span class="math inline">\(A=\sqrt{1+A}\)</span> ，即
+<span class="math inline">\(A^2-A-1=0\)</span> ，</p>
+<p>解得 <span class="math inline">\(A=\frac{1+\sqrt{5}}{2}\)</span> ，即
+<span
+class="math inline">\(\lim\limits_{n\to\infty}a_n=\frac{1+\sqrt{5}}{2}\)</span></p>
+<p> </p></li>
+<li><p>(1800,P5,解答题10)求 <span
+class="math inline">\(f(x)=\textrm{e}^{\frac{x-\frac{\pi}{4}}{\tan(x-\frac{\pi}{4})}}\)</span>
+在 <span class="math inline">\((0,2\pi)\)</span>
+内的间断点，并进行分类</p>
+<p>解：显然 <span
+class="math inline">\(x=\frac{\pi}{4},\frac{3\pi}{4},\frac{5\pi}{4},\frac{7\pi}{4}\)</span>
+为函数 <span class="math inline">\(f(x)\)</span> 的间断点</p>
+<p>由 <span
+class="math inline">\(\lim\limits_{x\to\frac{\pi}{4}}f(x)=\textrm{e}\)</span>
+得 <span class="math inline">\(x=\frac{\pi}{4}\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的可去间断点；</p>
+<p>由 <span
+class="math inline">\(\lim\limits_{x\to\frac{3\pi}{4}}f(x)=1\)</span> 得
+<span class="math inline">\(x=\frac{3\pi}{4}\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的可去间断点；</p>
+<p>由 <span
+class="math inline">\(\lim\limits_{x\to\frac{5\pi}{4}}f(x)=\infty\)</span>
+得 <span class="math inline">\(x=\frac{5\pi}{4}\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的第二类间断点；</p>
+<p>由 <span
+class="math inline">\(\lim\limits_{x\to\frac{7\pi}{4}}f(x)=1\)</span> 得
+<span class="math inline">\(x=\frac{7\pi}{4}\)</span> 为 <span
+class="math inline">\(f(x)\)</span> 的可去间断点；</p></li>
+</ul>
 
 
   </article>
