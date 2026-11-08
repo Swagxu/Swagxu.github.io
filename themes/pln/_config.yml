@@ -1,0 +1,13 @@
+logo: xyz
+more:
+  Github: https://github.com/Swagxu
+  bilibili: https://space.bilibili.com/85721315
+footer_info: © XYZ 2023-
+about:
+  title: Theme Pln
+  link: https://github.com/gaoryrt/hexo-theme-pln
+excerpt_num: 120
+toc: true
+latex: true
+valine:
+  enable: false
